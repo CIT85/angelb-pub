@@ -3,20 +3,20 @@ html {
 }
 
 body{
-background-color: #333;
-color: whitesmoke;
+background-color: #ffe4e1;
+color: rgb(136, 136, 136);
 
 }
 
 a{
-    color: aliceblue;
+    color: rgb(136, 136, 136);
 }
 a:visited{
-    color: aliceblue;
+    color: #000080;
 }
 a:visited{
-    color: lightgray;
+    color: #000080;
 }
 a:hover, a:active{
-    color: #eee;
+    color: #6b5353;
 }
