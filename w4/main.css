@@ -1,0 +1,22 @@
+html {
+    font-size: 22px
+}
+
+body{
+background-color: #ffe4e1;
+color: rgb(136, 136, 136);
+
+}
+
+a{
+    color: rgb(136, 136, 136);
+}
+a:visited{
+    color: #000080;
+}
+a:visited{
+    color: #000080;
+}
+a:hover, a:active{
+    color: #6b5353;
+}
