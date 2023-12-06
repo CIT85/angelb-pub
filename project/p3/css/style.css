@@ -1,0 +1,663 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&display=swap');
+
+
+/* Reset and Box Model */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles w flex */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 3rem;
+  min-height: 100vh;
+  background-image:url(../proj_images/background-side-ai.jpg);
+
+}
+
+
+/* Link Styles */
+
+a {
+  color:rgb(33, 107, 33);
+}
+
+a:visited{
+  color: rgb(0, 87, 163);
+}
+
+a:hover, a:active {
+  color: rgb(95, 9, 38);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Gloria Hallelujah", cursive; 
+  color: rgb(172, 26, 21);
+  font-size: 2em;
+
+}
+
+
+/* Container Styles w flex */
+
+.left-image,
+.right-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header Styles w Flex */
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 70px double  rgb(150, 99, 84);
+  font-size: 1.5rem;
+  margin: 1em;
+  padding: 1.5em;
+  background-color: rgb(43, 61, 43);
+  width: 70%; 
+  
+}
+
+.container-header1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0.05em;
+  background-color: rgb(43, 61, 43);
+  border: solid rgb(167, 6, 6);
+  max-width: 70%;
+  margin: 8.2em 10em 10em 1em;
+  z-index: 2;
+}
+
+.left-image{
+  max-width: 100%;
+  height: auto;
+  width: 250px; 
+  margin-left: 150px;
+  margin:0;
+}
+
+/* Main Styles w Flex */
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.container-main {
+  border: 5px solid rgb(150, 99, 84);
+  font-size: 1.5rem;
+  margin: 1em 15em 1em 15em;
+  padding: 1.5em;
+  background-color: rgb(59, 43, 61);
+}
+
+/* Navigation Styles */
+
+#nav {
+  background-color: rgb(106, 166, 223);
+  border: solid rgb(6, 167, 17);
+  margin-top: 1em;
+  margin-right: 2em;
+  margin-left: 2em; 
+  margin-bottom: 1em;
+  padding: 1em;
+  list-style: none;
+}
+
+/* Article Styles */
+
+article {
+  background-color: rgb(43, 61, 43);
+  padding: 2em;
+  border: 30px double rgb(44, 90, 80);
+  display: center;
+  flex: 1;
+  margin: 1em;
+}
+
+/* Paragraph Styles */
+
+p {
+  border: 4px dotted rgb(58, 87, 31);
+  background-color: rgb(197, 125, 91);
+  font-size: 2rem;
+  margin: 2em;
+  padding: 1.5em;
+}
+
+/* Table Styles */
+
+table, tr, th, td, caption {
+  border: 1px solid #eee;
+  border-collapse: collapse;
+  padding: 0.5rem;
+  background-color: rgb(99, 180, 133);
+}
+
+tr:last-child td {
+  border: none;
+  font-size:  1.5em;
+}
+
+/* List Styles */
+
+ul {
+  border: 4px dotted rgb(58, 87, 31);
+  background-color: rgb(105, 95, 80);
+  font-size: 2rem;
+  margin-top: 2em;
+  margin-right: 2em;
+  margin-left: 2em; 
+  margin-bottom: 1em;
+  padding: 1.5em;
+}
+
+#page {
+  font-size: 1.3em;
+  list-style: none;
+  color: rgb(117, 23, 23);
+}
+
+/* Hidden Element Styles */
+
+#pages, #pages1 {
+  display: none;
+}
+
+#gods, #gods1, #gods2, #gods3, #gods4 {
+  display: none;
+}
+
+#cb, #cb1, #cb2, #cb3, #cb4 {
+  border: 4px dotted rgb(202, 116, 59);
+  background-color: rgb(159, 204, 157);
+}
+
+/* Centered Text Styles */
+
+#center {
+  text-align: center;
+}
+
+/* Custom Class Styles */
+
+#cc, #cc1, #cc2 {
+  background-color: rgb(155, 113, 77);
+}
+
+#poem {
+  border: 4px dotted rgb(202, 116, 59);
+  background-color: rgb(159, 204, 157);
+  Font-size: 1.5rem;
+  margin-top: 2em;
+  margin-right: 15em;
+  margin-left: 5em; 
+  margin-bottom: 1em;
+  padding: 1.5em;
+}
+
+/* Color */
+
+.Color-Palette span {
+  width: 150px;
+  height: 150px;
+  margin: 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  border: 4px double white;
+}
+
+.color1 { background-color: rgb(33, 107, 33); }
+    .color2 { background-color: rgb(150, 99, 84); }
+    .color3 { background-color: rgb(43, 61, 43); }
+    .color4 { background-color: rgb(167, 6, 6); }
+    .color5 { background-color: rgb(106, 166, 223); }
+    .color6 { background-color: rgb(6, 167, 17); }
+    .color7 { background-color: rgb(44, 90, 80); }
+    .color8 { background-color: rgb(58, 87, 31); }
+    .color9 { background-color: rgb(197, 125, 91); }
+    .color10 { background-color: rgb(99, 180, 133); }
+    .color11 { background-color: rgb(59, 43, 61); 
+    }
+
+    .Color-Palette {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      min-height: 30vh;
+      flex-wrap: wrap;
+    }
+
+/* Calendar Buttons */
+
+.container-main-sub {
+  border: 5px solid rgb(150, 99, 84);
+  font-size: 1.5rem;
+  margin: 1em 5em 1em 5em;
+  padding: 2.0em;
+  background-color: rgb(59, 43, 61);
+}
+
+.articlesub {
+  background-color: rgb(43, 61, 43);
+  padding: 3.5em;
+  border: 30px double rgb(44, 90, 80);
+  display: center;
+  flex: 1;
+  margin: 1em;
+}
+
+.circle-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.circle-container {
+  position: relative;
+  width: 660px; 
+  height: 660px; 
+  background-image: url(/proj_images/Calendar-Aztec-Sub.png);
+  background-size: cover;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 50px; 
+  overflow: hidden;
+}
+
+.circle-main img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.circle-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.circle-button {
+  position:relative;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(52, 152, 219, 0.068);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px; 
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-button span {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2980b9;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.circle-button .span2 {
+  display: none;
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2980b9;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.circle-button:hover {
+  background-color: #2980b9;
+}
+
+.circle-button:hover span {
+  display: inline-block;
+}
+
+.button-text {
+  margin: 0;
+}
+
+.circle-button:nth-child(1) { transform: translate(345px, -120px); }
+.circle-button:nth-child(2) { transform: translate(390px, -95px); }
+.circle-button:nth-child(3) { transform: translate(430px, -46px); }
+.circle-button:nth-child(4) { transform: translate(445px, 30px); }
+.circle-button:nth-child(5) { transform: translate(435px, 120px); }
+.circle-button:nth-child(6) { transform: translate(400px, 215px); }
+.circle-button:nth-child(7) { transform: translate(335px, 300px); }
+.circle-button:nth-child(8) { transform: translate(250px, 370px); }
+.circle-button:nth-child(9) { transform: translate(130px, 430px); }
+.circle-button:nth-child(10) { transform: translate(10px, 460px); }
+.circle-button:nth-child(11) { transform: translate(-120px, 465px); }
+.circle-button:nth-child(12) { transform: translate(-255px, 445px); }
+.circle-button:nth-child(13) { transform: translate(-373px, 389px); }
+.circle-button:nth-child(14) { transform: translate(-473px, 315px); }
+.circle-button:nth-child(15) { transform: translate(-545px, 235px); }
+.circle-button:nth-child(16) { transform: translate(-590px, 135px); }
+.circle-button:nth-child(17) { transform: translate(-210px, -285px); }
+.circle-button:nth-child(18) { transform: translate(-190px, -370px); }
+.circle-button:nth-child(19) { transform: translate(-155px, -420px); }
+.circle-button:nth-child(20) { transform: translate(-110px, -453px); }
+
+
+
+/* Footer Styles */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin: 1em;
+  padding: 1px 1px 1px 1px;
+  background-color:  rgb(59, 43, 61);
+  border: 30px double rgb(44, 90, 80);
+  gap: 2px;
+}
+
+footer p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: rgb(106, 166, 223);
+}
+
+.links-list {
+  background-color: rgb(58, 87, 31);
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.footer-group-1 a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px; 
+}
+
+/* Style for ChatGPT V3.5 and Runway links */
+.footer-group-2 a {
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  margin-right: 50px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Media Queries */
+
+
+/* X-Small screens (xsm) */
+@media (max-width: 576px) {
+  body {
+    font-size: 1rem;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-size: 1.2em;
+    margin: 0.5em;
+  }
+
+  footer {
+    margin: 0.5em;
+  }
+
+  .container-header, .container-main-sub, .articlesub, .circle-container {
+    width: 90%;
+    margin: 0.5em;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .articlesub {
+    padding: 0.5em;
+    margin: 0.5em;
+  }
+
+  .circle-container {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .circle-button {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+}
+
+/* For small screens */
+@media (max-width: 576px) {
+  .container-main-sub {
+    margin: 1em;
+    padding: 1.5em;
+  }
+
+  body {
+    font-size: 1.5rem;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-size: 2em;
+    margin: 2em;
+  }
+
+  footer {
+    margin: 1em;
+  }
+
+  .container-header {
+    width: 90%;
+  }
+
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .articlesub {
+    width: 100%;
+    padding: 1em;
+    margin: 1em;
+  }
+
+  .circle-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  .circle-button {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+}
+
+/* For medium screens */
+@media (min-width: 992px) {
+  .container-main-sub {
+    margin: 1em 5em 1em 5em;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-size: 1em;
+    margin: 1em 1em 1em 1em;
+  }
+
+  footer {
+    margin: 1em;
+  }
+
+  .container-header {
+    width: 50%;
+  }
+
+  .main {
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .articlesub {
+    margin: 1em;
+  }
+
+  .circle-container {
+    width: 660px;
+    height: 660px;
+    margin-top: 50px;
+  }
+
+  .circle-button {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+}
+
+/* For extra-large screens */
+@media only screen and (min-width: 1280px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-size: 2.5em;
+    margin: 1em 6em 1em 6em;
+  }
+
+  footer {
+    margin: 1em;
+  }
+
+  .container-header, .container-main-sub, .articlesub, .circle-container {
+    width: 70%;
+    margin: 1em 15em 1em 15em;
+  }
+
+  .main {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .articlesub {
+    width: auto;
+    padding: 3.5em;
+    margin: 1em;
+  }
+
+  .circle-container {
+    width: 660px;
+    height: 660px;
+    margin-top: 50px;
+  }
+
+  .circle-button {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+}
+
+/* For 2xl screens */
+@media only screen and (min-width: 1536px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  h1, h2, h3, h4, h5 {
+    font-size: 2em;
+    margin: 1em;
+  }
+
+  footer {
+    margin: 1em;
+  }
+
+  .container-header, .container-main-sub, .articlesub, .circle-container {
+    width: 70%;
+    margin: 1em;
+  }
+
+  .main {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .articlesub {
+    padding: 3.5em;
+    margin: 1em;
+  }
+
+  .circle-container {
+    width: 660px;
+    height: 660px;
+    margin-top: 50px;
+  }
+
+  .circle-button {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+}
