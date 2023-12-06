@@ -438,6 +438,47 @@ footer a:hover {
   text-decoration: underline;
 }
 
+/* Form */
+
+form {
+  max-width: 600px;
+  margin: auto;
+  border: 2px solid #333;
+  background-color: #f58787;
+  padding: 20px;
+  border-radius: 10px;
+  }
+
+fieldset {
+  margin-bottom: 20px;
+  border: 2px solid #333;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
 
 /* Media Queries */
 
